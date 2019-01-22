@@ -1,0 +1,318 @@
+@font-face {
+  font-family: Larsseit;
+  src: url(Larsseit.otf);
+}
+
+body {
+	margin: 0;
+	background-color: #F4ECEC;
+	font-size: 20px;
+	height: 100%;
+}
+
+/* NAVIGATION BAR --------------------------------------------- */
+
+nav {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 6em;
+	z-index: 300;
+	top: 0;
+	pointer-events: none;
+}
+
+#home, #ham-con {
+	position: absolute;
+	display: block;
+	width: 2.5rem;
+	height: 1.4rem;
+	/*background-color: lightgrey;*/
+	margin-top: 3.3rem;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+#home {
+	left: 0;
+	margin-left: 4.5rem;
+}
+
+#ham-con {
+	right: 0;
+	margin-right: 10.75rem;
+	height: 1.1rem;
+}
+
+#hit-box {
+	display: block;
+	position: absolute;
+	width: 3.4rem;
+	height: 2rem;
+	margin-left: -0.45rem;
+	margin-top: -0.3rem;
+}
+
+.ham {
+	display: inline-block;
+	position: absolute;
+	width: 2.1rem;
+	height: 0.27rem;
+	background-color: black;
+	margin-left: 0.2rem;
+	pointer-events: none;
+	transition: all 0.2s;
+}
+
+.ham1 {
+	top: 0;
+}
+
+.ham2 {
+	bottom: 0;
+}
+
+.minimize1 {
+	margin-top: 0.415rem;
+}
+
+.minimize2 {
+	margin-bottom: 0.415rem;
+}
+
+#links-container {
+	position: absolute;
+	display: block;
+	width: 8rem;
+	height: 8rem;
+	right: 0;
+	margin-top: 4.9rem;
+	z-index: 200;
+	margin-right: 3rem;
+	display: none;
+	transition:  ease all 0.2s;
+	opacity: 0;
+}
+
+.appeared {
+	margin-right: 5rem !important;
+	opacity: 1 !important;
+	transition: ease all 0.2s;
+}
+
+.link {
+	display: inline-block;
+	font-family: sans-serif;
+	color: black;
+	font-weight: bold;
+	font-size: 1.75rem;
+	line-height: 2.67rem;
+	cursor: pointer;
+	pointer-events: auto;
+	opacity: 0.5;
+}
+
+.link:hover {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER COPY --------------------------------------------- */
+
+
+#header {
+	display: block;
+	width: 100%;
+	height: 25em;
+	z-index: 70;
+}
+
+h1 {
+	position: absolute;
+	display: block;
+	font-family: 'Larsseit';
+	font-size: 4.2rem;
+	font-weight: 300;
+	margin-left: 8.8rem;
+	margin-top: 7.8rem;
+	line-height: 5.5rem;
+	white-space: nowrap;
+	color: black;
+}
+
+#get-in-touch {
+	text-decoration: none;
+    position: relative;
+}
+
+#get-in-touch:after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0.26rem;
+    border-width: 0 0 0.24rem;
+    border-style: solid;
+}
+
+
+/* PROJECT SECTION --------------------------------------------- */
+
+
+
+.projects {
+	display: block;
+	width: 100%;
+	height: 140rem;
+}
+
+
+.project-container {
+	position: absolute;
+	display: block;
+	/*border-radius: 8px;
+	background-image: url(coll.png);
+	background-color: black;*/
+	background-position: center;
+	background-size: 100% 100%;
+	transition: ease-in-out 0.8s;
+	cursor: pointer;
+	perspective: 40px;
+}
+
+
+.mid {
+	width: 35.7rem;
+	height: 22.7rem;
+}
+
+.small {
+	width: 25.3rem;
+	height: 16.1rem;
+}
+
+.large {
+	width: 46.3rem;
+	height: 28.5rem;
+}
+
+
+.p01, .p04 {
+	margin-left: 8.8rem;
+}
+
+.p02, .p05 {
+	right: 0;
+	margin-right: 8.7rem;
+}
+
+.p01 {
+	margin-top: 6.7rem;
+	left: 0;
+}
+
+.p02 {
+	margin-top: 10rem;
+}
+
+.p03 {
+	margin-top: 33rem;
+	margin-left: 24.5rem;
+}
+
+.p04 {
+	margin-top: 67.8rem;
+}
+
+.p05 {
+	margin-top: 64.5rem;
+}
+
+.p06 {
+	margin-top: 90.8rem;
+	margin-left: 19.2rem;
+}
+
+
+.inner {
+	border-radius: 8px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+	transition: transform 0.5s;
+	transition: background-size 0.8s;
+	background-position: center;
+}
+
+.inner:hover {
+	background-size: 102% 102%;
+}
+
+#inner01 {
+	background-image: url(place1.JPG);
+}
+
+#inner02 {
+	background-image: url(place2.png);
+}
+
+#inner03 {
+	background-image: url(place3.png);
+}
+
+#inner04 {
+	background-image: url(place4.png);
+}
+
+#inner05 {
+	background-image: url(place5.JPG);
+}
+
+#inner06 {
+	background-image: url(place6.JPG);
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#overlay {
+	position: absolute;
+	display: block;
+	width: 100vw;
+	height: 2800px;
+	background-image: url(page-ham.png);
+	background-size: 100% 100%;
+	z-index: 50;
+	opacity: 0.6;
+	display: none;
+}
+
