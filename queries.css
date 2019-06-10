@@ -1,0 +1,521 @@
+
+
+
+/* MEDIA QUERY FOR HOME PAGE MINIFICATION */
+
+@media only screen and (max-width: 1000px)
+and (min-device-width: 800px) 
+and (-webkit-min-device-pixel-ratio: 2){
+
+body {
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 4.5rem;
+	margin-left: 2rem;
+}
+
+
+.p01, .p04 {
+	margin-left: 2rem;
+}
+
+
+.p02, .p05 {
+	right: 0;
+	margin-right: 2rem;
+}
+
+.large {
+	margin-left: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/* MEDIA QUERY FOR MOBILE */
+
+@media only screen and (max-width: 700px)
+and (min-device-width: 375px) 
+and (-webkit-min-device-pixel-ratio: 2){
+
+body {
+	
+}
+
+h1 {
+	font-size: 1.3rem;
+	font-size: 6vw;
+	line-height: 9vw;
+	margin-left: 1.4rem;
+}
+
+
+
+#header {
+	height: 22rem;
+}
+
+#home {
+	margin-left: 5vw;
+}
+
+#ham-con {
+	margin-right: 5vw;
+}
+
+.links {
+	margin-right: 5vw !important;
+	background-color: #F4ECEC;
+}
+
+
+.projects {
+	margin-top: 0rem;
+	height: 0rem;
+}
+
+
+.project-container {
+	display: block;
+	position: static;
+	float: left;
+	width: 90vw;
+	height: 60vw;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	margin-top: 0rem;
+	margin-bottom: 4rem;
+	margin-left: 5vw;
+}
+
+
+
+#get-in-touch:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0.08rem;
+    border-width: 0 0 0.08rem;
+    border-style: solid;
+}
+
+.home-links {
+	display: block;
+	float: left;
+	width: 20rem;
+	height: 1.5rem;
+	padding-left: 1.5rem;
+	margin-top: 0.4rem;
+}
+
+#made-by {
+	text-align: center;
+}
+
+
+/*
+
+.t, .desc {
+	display: inline-block;
+	opacity: 1;
+}
+
+.t {
+	margin-left: -1rem;
+	margin-top: -1rem;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+}
+
+.desc {
+	font-size: 0.8rem;
+	background-color: #F4ECEC;
+}
+
+.name-span {
+	background-color: #F4ECEC;
+}
+
+*/
+
+
+/* ABOUT ME PAGE MOBILE */
+
+.a-left, .a-right {
+	position: static;
+	width: 100%;
+	float: left;
+}
+
+.a-left {
+	margin-top: 0rem;
+}
+
+.a-right {
+	margin-top: 8rem;
+	height: 28rem;
+}
+
+.about-copy {
+	width: 100%;
+}
+
+.about-header, .about-text {
+	width: 90vw;
+	margin-left: 5vw;
+}
+
+.about-text {
+	margin-top: 6rem;
+}
+
+.about-text br {
+	display: none;
+}
+
+
+.nick-photo {
+	display: block;
+	width: 90vw;
+	height: 105vw;
+	float: left;
+	margin-top: 0rem;
+	margin-left: 5vw;
+}
+
+.a-left2, .a-right2 {
+	width: 100%;
+	float: left;
+}
+
+
+.a-left2 {
+	height: 15rem;
+	margin-top: 32vw;
+}
+
+.a-right2 {
+	height: 0rem;
+}
+
+.contact-copy {
+	width: inherit;
+	margin-top: 0rem;
+	height: 0rem;
+}
+
+.contact-info, address {
+	margin-left: 5vw;
+}
+
+address {
+	margin-top: -3rem;
+}
+
+
+
+
+
+
+
+/* PROJECT QUERIES */
+
+body {
+	overflow-x: hidden;
+}
+
+.p-title {
+	font-size: 3rem;
+	margin-left: 1rem;
+	margin-top: 15rem;
+}
+
+.project-type {
+	font-size: 1rem;
+	margin-left: 1rem;
+	margin-top: 18rem;
+}
+
+.intro-copy {
+	font-size: 1.1rem;
+	width: 80%;
+	margin-left: 1rem;
+	margin-top: 21rem;
+}
+
+
+
+
+
+
+
+.sec-top {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.left, .right {
+	width: 100%;
+	float: left;
+}
+
+.right {
+	position: absolute;
+	margin-left: 0rem;
+}
+
+
+
+.hero {
+	margin-left: 0rem;
+	width: 100vw;
+	height: 15rem;
+	background-size: 100vw 70vw;
+	background-repeat: no-repeat;
+}
+
+
+
+
+.sec-copy {
+	width: 100vw;
+	margin-bottom: 0rem;
+}
+
+
+
+.center-copy {
+	width: 100%;
+	height: 0rem;
+}
+
+
+.step-copy {
+	position: static;
+	width: 90vw;
+	margin-left: 5vw;
+	margin-top: 1rem;
+}
+
+.steps {
+	width: 90vw;
+	margin: 0rem;
+	margin-left: 5vw;
+	position: static;
+}
+
+
+.sec-images {
+	width: 100vw;
+
+}
+
+.sec-big-images {
+	height: 20rem;
+}
+
+
+
+.details {
+	width: inherit;
+}
+
+.process-image {
+	width: 100vw;
+	height: 32vw;
+}
+
+.big-image {
+	width: 100vw;
+	height: 60vw;
+}
+
+
+
+.caption {
+	width: 90vw;
+	margin-left: 5vw;
+}
+
+.up {
+	display: none;
+}
+
+.p-footer {
+	height: 12rem;
+	margin-top: 0rem;
+}
+
+.p-middle {
+	height: 5rem;
+}
+
+
+
+.f-links1 {
+	height: 6rem;
+
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.pagination {
+	width: 10rem;
+	position: static;
+	display: inline-block;
+	font-size: 0.7rem;
+	clear: left;
+	margin-top: 0rem;
+	margin-left: 24%;
+}
+
+
+
+
+
+
+.pag1 {
+
+}
+
+.pag2 {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+.pag3 {
+
+}
+
+
+
+
+
+
+
+
+
+.f-links2 {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+
+.home-links {
+	display: inline-block;
+	margin: 0rem;
+}
+
+
+
+#made-by {
+	float: left;
+	margin-left: -1rem;
+}
+
+.footer {
+	height: 6rem;
+}
+
+
+
+
+
+
+/* RESUME PAGE QUERIES */
+
+
+.resume-left, .resume-right {
+	width: 100%;
+	float: left;
+}
+
+
+#resume-title {
+	margin-left: 2rem;
+}
+
+
+.resume-left {
+	height: 20rem;
+}
+
+
+.download {
+	margin-left: 0rem;
+}
+
+.downloads  {
+	margin-left: 2rem;
+}
+
+
+.resume-right {
+	width: 80vw;
+	height: 105vw;
+	margin-left: 10vw;
+	background-color: orange;
+	margin-bottom: 4rem;
+	margin-top: 3rem;
+}
+
+
+#res {
+	width: inherit;
+	height: inherit;
+	float: left;
+	margin-top: 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

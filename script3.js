@@ -3,9 +3,14 @@
 
 const sr = ScrollReveal();
 
+console.log('connected');
+
 
 sr.reveal('h1');
+sr.reveal('.about-copy');
+sr.reveal('.nick-photo');
 sr.reveal('.project-container', { delay: 200 });
+sr.reveal('.sec', { delay: 200 });
 
 
 
@@ -28,6 +33,9 @@ var containers = document.getElementsByClassName("project-container");
 var container = document.getElementById("con01"),
 inner = document.getElementById("inner01");
 
+//Defining title object
+var title = inner.children[0];
+var filler = inner.children[1];
 
 
 
@@ -59,16 +67,17 @@ var mouse = {
 
 function hovering(){
   var thisID = this.id;
-  console.log('this id: ' + thisID);
   createMouse(thisID);
 }
 
 function createMouse(input){
-  console.log( 'input: ' + input);
+  //console.log( 'input: ' + input);
   var select = document.getElementById(input);
   mouse.setOrigin(select);
 
   var child = select.children[0];
+  title = child.children[0];
+  filler = child.children[1];
 
   inner = child;
 
@@ -80,25 +89,7 @@ function createMouse(input){
 
 for(i in containers){
   containers[i].onmouseover = hovering;
-  //console.log('added');
 }
-
-
-
-// Track the mouse position relative to the center of the container.
-
-
-
-
-
-
-
-
-
-
-//containers.mouseover = console.log(this.id);
-
-// Init
 
 
 //--------------------------------------------------
@@ -113,10 +104,12 @@ var isTimeToUpdate = function() {
 
 var onMouseEnterHandler = function(event) {
   update(event);
+  titleAppear();
 };
 
 var onMouseLeaveHandler = function() {
   inner.style = "";
+  titleDisappear();
 };
 
 var onMouseMoveHandler = function(event) {
@@ -143,19 +136,32 @@ var updateTransformStyle = function(x, y) {
 
 
 
-//--------------------------------------------------
 
-//container.onmouseenter = onMouseEnterHandler;
-//container.onmouseleave = onMouseLeaveHandler;
-//container.onmousemove = onMouseMoveHandler;
+// Function to make title appear
+
+function titleAppear(){
+  title.style.display = "block";
+  filler.style.opacity = 0.85;
+  setTimeout(function(){ title.classList.add("t-visible") }, 150);
+}
+
+function titleDisappear(){
+  title.style.display = "none";
+  filler.style.opacity = 0;
+  setTimeout(function(){ title.classList.remove("t-visible") }, 0);
+}
 
 
-/*
-for(i in containers){
-  containers[i].onmouseenter = onMouseEnterHandler;
-  containers[i].onmouseleave = onMouseLeaveHandler;
-  containers[i].onmousemove = onMouseMoveHandler;
-}*/
+
+
+
+
+
+
+
+
+
+
 
 
 

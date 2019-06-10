@@ -10,6 +10,32 @@ body {
 	height: 100%;
 }
 
+p {
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	line-height: 1.7rem;
+}
+
+h1 {
+	position: absolute;
+	display: block;
+	font-family: 'Larsseit';
+	font-size: 4.2rem;
+	font-weight: 300;
+	margin-left: 8.8rem;
+	margin-top: 7.8rem;
+	line-height: 5.5rem;
+	white-space: nowrap;
+	color: #222222;
+
+}
+
+
+h2 {
+	font-family: sans-serif;
+	font-size: 1.1rem;
+}
+
 /* NAVIGATION BAR --------------------------------------------- */
 
 nav {
@@ -27,16 +53,76 @@ nav {
 	display: block;
 	width: 2.5rem;
 	height: 1.4rem;
-	/*background-color: lightgrey;*/
 	margin-top: 3.3rem;
 	pointer-events: auto;
 	cursor: pointer;
 }
 
 #home {
+	width: 4rem;
 	left: 0;
-	margin-left: 4.5rem;
+	margin-left: 3rem;
+	cursor: pointer;
 }
+
+svg path {
+	pointer-events: none;
+	transition: ease all 0.3s;
+}
+
+#Layer_1, #Layer_2 {
+	display: block;
+	position: absolute;
+	pointer-events: none;
+}
+
+#Layer_1 {
+	width: 42px;
+	height: 21px;
+	transition: ease all 0.3s;
+	left: 0;
+}
+
+#Layer_2 {
+	width: 38px;
+	height: 21px;
+	transition: ease all 0.3s;
+	right: 0;
+	margin-right: -15px;
+}
+
+#path01, #path02 {
+	fill: #222222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #ham-con {
 	right: 0;
@@ -58,7 +144,7 @@ nav {
 	position: absolute;
 	width: 2.1rem;
 	height: 0.27rem;
-	background-color: black;
+	background-color: #222222;
 	margin-left: 0.2rem;
 	pointer-events: none;
 	transition: all 0.2s;
@@ -103,17 +189,28 @@ nav {
 .link {
 	display: inline-block;
 	font-family: sans-serif;
-	color: black;
+	color: #222222;
 	font-weight: bold;
 	font-size: 1.75rem;
 	line-height: 2.67rem;
 	cursor: pointer;
 	pointer-events: auto;
 	opacity: 0.5;
+	text-decoration: none;
 }
 
 .link:hover {
 	opacity: 1;
+}
+
+.line2 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0.08rem;
+	background-color: #bfbfbf;
+	margin-top: -6rem;
+	z-index: 45;
 }
 
 
@@ -137,22 +234,11 @@ nav {
 	z-index: 70;
 }
 
-h1 {
-	position: absolute;
-	display: block;
-	font-family: 'Larsseit';
-	font-size: 4.2rem;
-	font-weight: 300;
-	margin-left: 8.8rem;
-	margin-top: 7.8rem;
-	line-height: 5.5rem;
-	white-space: nowrap;
-	color: black;
-}
-
 #get-in-touch {
 	text-decoration: none;
     position: relative;
+    text-decoration: none;
+    color: #222222;
 }
 
 #get-in-touch:after {
@@ -166,9 +252,68 @@ h1 {
     border-style: solid;
 }
 
+#get-in-touch {
+  cursor: url(images/mail.png), auto !important;
+}
+
+#get-in-touch:visited {
+	color: #222222;
+}
+
+#get-in-touch:hover {
+	color: #0921ea;
+}
+
 
 /* PROJECT SECTION --------------------------------------------- */
 
+.t {
+	position: absolute;
+	border-radius: 8px;
+	font-weight: bold;
+	height: inherit;
+	width: inherit;
+	text-decoration: none;
+	font-family: sans-serif;
+	display: block;
+	color: #222222;
+	bottom: 0;
+	font-size: 1.7rem;
+	display: none;
+	transition: ease all 0.4s;
+	opacity: 0;
+	margin-left: -2rem;
+	z-index: 70;
+	top: 2rem;
+	left: 2rem;
+	line-height: 1.8rem;
+}
+
+.t-visible {
+	opacity: 1;
+	margin-left: 0rem;
+}
+
+.desc {
+	font-size: 1rem;
+	font-weight: 300;
+	font-size: 1.1rem;
+	opacity: 0.35;
+	font-weight: bold;
+	background-color: 
+}
+
+.filler {
+	border-radius: 8px;
+	position: absolute;
+	display: block;
+	width: inherit;
+	height: inherit;
+	background-color: #f0f0f0;
+	opacity: 0;
+	z-index: 50;
+	transition: ease opacity 0.4s;
+}
 
 
 .projects {
@@ -181,12 +326,9 @@ h1 {
 .project-container {
 	position: absolute;
 	display: block;
-	/*border-radius: 8px;
-	background-image: url(coll.png);
-	background-color: black;*/
 	background-position: center;
 	background-size: 100% 100%;
-	transition: ease-in-out 0.8s;
+	/*transition: ease-in-out 0.8s;*/
 	cursor: pointer;
 	perspective: 40px;
 }
@@ -224,25 +366,31 @@ h1 {
 
 .p02 {
 	margin-top: 10rem;
+	z-index: 500;
 }
 
 .p03 {
-	margin-top: 33rem;
+	margin-top: 35rem;
 	margin-left: 24.5rem;
 }
 
 .p04 {
-	margin-top: 67.8rem;
+	margin-top: 71.8rem;
+	z-index: 500;
 }
 
 .p05 {
-	margin-top: 64.5rem;
+	margin-top: 68.5rem;
 }
 
 .p06 {
-	margin-top: 90.8rem;
+	margin-top: 96.8rem;
 	margin-left: 19.2rem;
 }
+
+
+
+
 
 
 .inner {
@@ -252,9 +400,10 @@ h1 {
 	height: 100%;
 	background-size: 100% 100%;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-	transition: transform 0.5s;
+	transition: ease all 0.5s;
 	transition: background-size 0.8s;
 	background-position: center;
+	overflow: hidden;
 }
 
 .inner:hover {
@@ -262,27 +411,29 @@ h1 {
 }
 
 #inner01 {
-	background-image: url(place1.JPG);
+	background-image: url(images/boosted.jpg);
+	background-size: 100% 100%;
 }
 
 #inner02 {
-	background-image: url(place2.png);
+	background-image: url(images/nb.JPG);
 }
 
 #inner03 {
-	background-image: url(place3.png);
+	background-image: url(images/brandcenter.jpg);
 }
 
 #inner04 {
-	background-image: url(place4.png);
+	background-image: url(images/glimpse.png);
+	background-size: 130% 100%;
 }
 
 #inner05 {
-	background-image: url(place5.JPG);
+	background-image: url(images/cards.jpg);
 }
 
 #inner06 {
-	background-image: url(place6.JPG);
+	background-image: url(images/Diabetes-Thumb.jpg);
 }
 
 .hidden {
@@ -292,27 +443,627 @@ h1 {
 
 
 
+/* FOOTER ------------------------------------------------------ */
+
+
+.footer {
+	height: 8rem;
+	bottom: 0;
+	width: 100%;
+	float: left;
+	background-size: 100% 100%;
+	padding-top: 4rem;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.middle {
+	display: inline-block;
+	width: 82vw;
+	height: 9rem;
+	margin-top: -3rem;
+}
+
+.f-links1 {
+	display: block;
+	width: 100%;
+	height: 7.5rem;
+}
+
+.up {
+	display: block;
+	float: left;
+	width: 5%;
+	height: 5rem;
+}
+
+#up-arrow {
+	display: inline-block;
+	width: 2.5rem;
+	height: 3rem;
+	background-image: url(images/up-arrow.svg);
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+#up-arrow:hover {
+	margin-top: -0.2rem;
+}
+
+.pagination {
+	display: block;
+	width: 31.666%;
+	height: 2rem;
+	float: left;
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.pagination:hover {
+	opacity: 1;
+}
+
+.pag1 {
+	margin-top: 1.8rem;
+	opacity: 0.5;
+}
+
+.pag2 {
+	font-size: 1.6rem;
+	margin-top: 1.3rem;
+	cursor: default;
+}
+
+.pag3 {
+	margin-top: 1.8rem;
+	opacity: 0.5;
+}
+
+
+.f-links2 {
+	display: block;
+	width: 100%;
+	height: 1.5rem;
+	float: left;
+}
+
+.home-links {
+	display: block;
+	float: left;
+	width: 20rem;
+	height: 1.5rem;
+	padding-left: 0.5rem;
+	margin-top: 0.4rem;
+}
+
+.h-links {
+	display: inline-block;
+	float: left;
+	width: 5.3rem;
+	height: 1.5rem;
+	text-align: left;
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	color: #222222;
+}
+
+.hl2, .hl3 {
+	opacity: 0.5;
+}
+
+.h-links:hover {
+	opacity: 1;
+}
+
+.f-home {
+	height: 3.3rem;
+}
+
+.m-home {
+	height: 3.3rem;
+}
+
+#made-by {
+	display: inline-block;
+	float: right;
+	width: 20.6rem;
+	font-size: 0.85rem;
+	text-align: left;
+	margin-top: 0.2rem;
+	opacity: 0.5;
+}
+
+/* END OF FOOTER ------------------------------------------------------ */
 
 
 
+/* RESUME PAGE ------------------------------------------------- */
+
+.resume-left, .resume-right {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 65rem;
+}
+
+.resume-left {
+	width: 39%;
+	z-index: 200;
+}
+
+.resume-right {
+	width: 61%;
+	z-index: 170;
+}
+
+#resume-title {
+	margin-top: 10.5rem;
+	margin-left: 8.45rem;
+}
+
+.download {
+	color: blue;
+	font-size: 1.1rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: block;
+	margin-left: 8.6rem;
+	cursor: pointer;
+	margin-bottom: 0.8rem;
+	white-space: nowrap;
+	z-index: 500;
+}
+
+.download:hover {
+	text-decoration: underline;
+}
+
+.downloads {
+	margin-top: 15.8rem;
+	position: absolute;
+}
+
+#res {
+	display: block;
+	left: 0;
+	width: 41rem;
+	height: 54rem;
+	margin-top: 7.6rem;
+	z-index: 100;
+}
+
+.r-footer {
+	height: 3.3rem;
+}
+
+.r-middle {
+	height: 3.3rem;
+}
 
 
 
+/* PROJECT PAGES ------------------------------------------------- */
 
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.sec {
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.sec-top {
+	height: 34rem;
+	overflow-x: hidden;
+}
+
+.sec-process {
+	height: 10rem;
+	text-align: center;
+}
+
+.sec-copy {
+	padding-bottom: 8rem;
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+.sec-images {
+	text-align: center;
+	padding-bottom: 6rem;
+}
+
+.process-image {
+	display: inline-block;
+	width: 80.5vw;
+	height: 25vw;
+	background-color: white;
+}
+
+.caption {
+	display: block;
+	width: 36rem;
+	font-size: 0.85rem;
+	text-align: left;
+	line-height: 1.2rem;
+	margin-top: 0rem;
+	margin-left: 9.8vw;
+	opacity: 0.5;
+}
+
+.details {
+	text-align: center;
+}
+
+.sec-big-images {
+	height: 47rem;
+	margin-bottom: 10rem;
+	text-align: center;
+}
+
+.bigger {
+	height: 160rem;
+	margin-top: 8rem;
+}
+
+#users-big {
+	height: 68rem;
+}
+
+.big-image {
+	display: inline-block;
+	width: 80rem;
+	height: 100%;
+}
 
 
-
-
-#overlay {
+.left, .right {
 	position: absolute;
 	display: block;
-	width: 100vw;
-	height: 2800px;
-	background-image: url(page-ham.png);
-	background-size: 100% 100%;
-	z-index: 50;
-	opacity: 0.6;
-	display: none;
+	height: 36rem;
 }
+
+.left {
+	width: 34rem;
+	z-index: 50;
+}
+
+.right {
+
+	width: 60rem;
+	margin-left: 34rem;
+	z-index: 40;
+	overflow-x: hidden;
+}
+
+.hero {
+	display: block;
+	width: 58rem;
+	height: 35rem;
+	margin-left: 1rem;
+	background-size: 100% 100%;
+	border-radius: 10px;
+	margin-top: -2rem;
+}
+
+.grad {
+	display: block;
+	width: 100%; 
+	height: 100%;
+	background-color: orange;
+	border-radius: 10px;
+	background: rgb(255,255,255);
+	background: linear-gradient(115deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	opacity: 0.3;
+}
+
+.p-title {
+	position: absolute;
+	font-size: 6.1rem;
+	margin-left: 8.3rem;
+	margin-top: 10rem;
+	letter-spacing: 0.03rem;
+}
+
+.project-type {
+	color: #222222;
+	position: absolute;
+	margin-left: 8.6rem;
+	margin-top: 17rem;
+	opacity: 0.35;
+}
+
+.intro-copy {
+	position: absolute;
+	margin-top: 19.5rem;
+	margin-left: 8.6rem;
+}
+
+.visit {
+	color: blue;
+	font-size: 1.1rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	margin-left: 8.6rem;
+	margin-bottom: 3.3rem;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.visit:hover {
+	text-decoration: underline;
+}
+
+.line {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0.08rem;
+	background-color: #bfbfbf;
+	margin-top: 6rem;
+	z-index: 45;
+}
+
+.line2 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0.08rem;
+	background-color: #bfbfbf;
+	margin-top: -6rem;
+	z-index: 45;
+}
+
+
+#process {
+	position: absolute;
+	display: inline-block;
+	font-size: 1.7rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-left: -4.5rem;
+	background-color: #F4ECEC;
+	width: 9rem;
+	margin-top: 5rem;
+	z-index: 60;
+}
+
+.center-copy {
+	display: inline-block;
+	width: 82vw;
+	height: 10rem;
+	margin-top: 0rem;
+	text-align: left;
+}
+
+.steps {
+	margin-left: 0.5rem;
+	margin-top: 2rem;
+}
+
+.step-copy {
+	position: absolute;
+	margin-left: 16.5rem;
+	margin-top: -2.35rem;
+	line-height: 1.5rem;
+	width: 40rem;
+}
+
+.p-footer {
+	height: 8rem;
+	bottom: 0;
+	width: 100%;
+	float: left;
+	/*background-image: url(images/Footer.png);*/
+	background-size: 100% 100%;
+	padding-top: 4rem;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.p-middle {
+	display: inline-block;
+	width: 82vw;
+	height: 9rem;
+	margin-top: -3rem;
+}
+
+
+
+
+/* ABOUT PAGE ------------------------------------------------- */
+
+
+
+
+.a-left, .a-right {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 41rem;
+}
+
+.a-left2, .a-right2 {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 32rem;
+}
+
+
+
+.contact {
+	display: block;
+	width: 100%;
+	height: 26rem;
+	float: left;
+}
+
+
+
+.about-copy {
+	display: block;
+	width: 36.5rem;
+	height: 36rem;
+	right: 0;
+	float: right;
+	margin-top: 5.2rem;
+	text-align: left;
+}
+
+.nick-photo {
+	display: block;
+	width: 30.5rem;
+	height: 34.5rem;
+	float: left;
+	margin-top: 5.2rem;
+	margin-left: 0.5rem;
+}
+
+.about-header {
+	display: block;
+	margin-left: 0px;
+	margin-top: 2.3rem;
+	float: left;
+}
+
+.about-text {
+	display: block;
+	float: left;
+	margin-top: 8rem;
+	margin-left: 0.2rem;
+}
+
+#nick-inner {
+	background-image: url(images/nick-photo.jpg);
+	background-size: 100% 100%;
+}
+
+.contact-info {
+	display: block;
+	margin-left: 0px;
+	margin-top: 1.3rem;
+	float: left;
+}
+
+address {
+	left: 0;
+}
+
+.big-copy {
+	display: block;
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	margin-left: 0.25rem;
+	font-weight: bold;
+	font-style: normal;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.big-copy:hover {
+	text-decoration: underline;
+}
+
+.big1 {
+	width: 0rem;
+	margin-top: 7rem;
+}
+
+.big2 {
+	width: 0rem;
+	margin-top: 0.5rem;
+}
+
+
+.contact-copy {
+	display: block;
+	width: 36.5rem;
+	height: 36rem;
+	right: 0;
+	float: right;
+	margin-top: 5.2rem;
+	text-align: left;
+}
+
+
+.line {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0.08rem;
+	background-color: #bfbfbf;
+	margin-top: 6rem;
+	z-index: 45;
+}
+
+.line2 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0.08rem;
+	background-color: #bfbfbf;
+	margin-top: -6rem;
+	z-index: 45;
+}
+
+.footer {
+	height: 3.3rem;
+}
+
+.middle {
+	height: 3.3rem;
+}
+
+
+.hl2, .hl3 {
+	opacity: 0.5;
+}
+
+.hl1 {
+	opacity: 1;
+}
+
+.al1, .al3 {
+	opacity: 0.5;
+}
+
+.al2 {
+	opacity: 1;
+}
+
+.rl1, .rl2 {
+	opacity: 0.5;
+}
+
+.rl3 {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

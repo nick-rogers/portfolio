@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	background-color: #F4ECEC;
+	font-size: 20px;
+}
+
+.a-left, .a-right {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 41rem;
+}
+
+.a-left2, .a-right2 {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 32rem;
+}
+
+
+
+.contact {
+	display: block;
+	width: 100%;
+	height: 26rem;
+	float: left;
+}
+
+
+
+.about-copy {
+	display: block;
+	width: 36.5rem;
+	height: 36rem;
+	right: 0;
+	float: right;
+	margin-top: 5.2rem;
+	text-align: left;
+}
+
+.nick-photo {
+	display: block;
+	width: 30.5rem;
+	height: 34.5rem;
+	float: left;
+	margin-top: 5.2rem;
+	margin-left: 0.5rem;
+}
+
+.about-header {
+	display: block;
+	margin-left: 0px;
+	margin-top: 2.3rem;
+	float: left;
+}
+
+.about-text {
+	display: block;
+	float: left;
+	margin-top: 8rem;
+	margin-left: 0.2rem;
+}
+
+#nick-inner {
+	background-image: url(images/nick-photo.jpg);
+	background-size: 100% 100%;
+}
+
+.contact-info {
+	display: block;
+	margin-left: 0px;
+	margin-top: 1.3rem;
+	float: left;
+}
+
+address {
+	left: 0;
+}
+
+.big-copy {
+	display: block;
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	margin-left: 0.25rem;
+	font-weight: bold;
+	font-style: normal;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.big-copy:hover {
+	text-decoration: underline;
+}
+
+.big1 {
+	width: 0rem;
+	margin-top: 7rem;
+}
+
+.big2 {
+	width: 0rem;
+	margin-top: 0.5rem;
+}
+
+
+.contact-copy {
+	display: block;
+	width: 36.5rem;
+	height: 36rem;
+	right: 0;
+	float: right;
+	margin-top: 5.2rem;
+	text-align: left;
+}
+
+
+.line {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0.08rem;
+	background-color: #bfbfbf;
+	margin-top: 6rem;
+	z-index: 45;
+}
+
+.line2 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0.08rem;
+	background-color: #bfbfbf;
+	margin-top: -6rem;
+	z-index: 45;
+}
+
+.footer {
+	height: 3.3rem;
+}
+
+.middle {
+	height: 3.3rem;
+}
+
+
+.hl1, .hl3 {
+	opacity: 0.5;
+}
+
+.hl2 {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

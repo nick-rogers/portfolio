@@ -1,0 +1,202 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+	color: #222222;
+}
+
+p {
+	color: #222222;
+}
+
+.sec {
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.sec-top {
+	height: 36rem;
+	overflow-x: hidden;
+}
+
+.sec-process {
+	height: 12rem;
+	text-align: center;
+}
+
+.sec-copy {
+	padding-bottom: 8rem;
+	text-align: center;
+}
+
+.sec-images {
+	text-align: center;
+	padding-bottom: 6rem;
+}
+
+.process-image {
+	display: inline-block;
+	width: 80.5vw;
+	height: 25vw;
+	background-color: red;
+}
+
+.caption {
+	display: block;
+	width: 36rem;
+	font-size: 0.85rem;
+	text-align: left;
+	line-height: 1.2rem;
+	margin-top: 0rem;
+	margin-left: 9.8vw;
+	opacity: 0.5;
+}
+
+.sec-big-images {
+	height: 48rem;
+	background-color: red;
+}
+
+.big-image {
+	width: 100%;
+	height: 100%;
+	background-color: green;
+}
+
+.left, .right {
+	position: absolute;
+	display: block;
+	height: 36rem;
+}
+
+.left {
+	width: 34rem;
+	z-index: 50;
+}
+
+.right {
+
+	width: 60rem;
+	margin-left: 34rem;
+	z-index: 40;
+	overflow-x: hidden;
+}
+
+.hero {
+	display: block;
+	width: 58rem;
+	height: 35rem;
+	margin-left: 1rem;
+	background-image: url(images/nb.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+	margin-top: -2rem;
+}
+
+.grad {
+	display: block;
+	width: 100%; 
+	height: 100%;
+	background-color: orange;
+	border-radius: 10px;
+	background: rgb(255,255,255);
+	background: linear-gradient(115deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	opacity: 0.3;
+}
+
+.p-title {
+	position: absolute;
+	font-size: 6.1rem;
+	margin-left: 8.3rem;
+	margin-top: 10.5rem;
+	letter-spacing: 0.03rem;
+}
+
+.intro-copy {
+	position: absolute;
+	margin-top: 16.5rem;
+	margin-left: 8.6rem;
+}
+
+.visit {
+	color: blue;
+	font-size: 1.1rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	margin-left: 8.6rem;
+	margin-bottom: 3.3rem;
+	cursor: pointer;
+}
+
+.visit:hover {
+	text-decoration: underline;
+}
+
+.line {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0.08rem;
+	background-color: #bfbfbf;
+	margin-top: 6rem;
+	z-index: 45;
+}
+
+.line2 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 0.08rem;
+	background-color: #bfbfbf;
+	margin-top: -6rem;
+	z-index: 45;
+}
+
+
+#process {
+	position: absolute;
+	display: inline-block;
+	font-size: 1.7rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-left: -4.5rem;
+	background-color: #F4ECEC;
+	width: 9rem;
+	margin-top: 5rem;
+	z-index: 60;
+	color: #222222;
+}
+
+.center-copy {
+	display: inline-block;
+	width: 82vw;
+	height: 10rem;
+	margin-top: 0rem;
+	text-align: left;
+}
+
+.steps {
+	margin-left: 0.5rem;
+	margin-top: 2rem;
+	color: #222222;
+}
+
+.step-copy {
+	position: absolute;
+	margin-left: 16.5rem;
+	margin-top: -2.35rem;
+	line-height: 1.5rem;
+}
+
+
+
+
+
+
+
